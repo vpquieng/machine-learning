@@ -45,7 +45,7 @@ data_augmentation = tf.keras.Sequential([
 ])
 
 # Normalize the pixel values
-normalization_layer = tf.keras.layers.Rescaling(1./255)
+normalization_layer = tf.keras.layers.Rescaling(1)
 
 # Prepare the datasets with augmentation and normalization
 train_ds = train_ds.map(
